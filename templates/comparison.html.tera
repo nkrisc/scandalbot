@@ -1,0 +1,53 @@
+{% extends "base" %}
+
+{% block title %} - {{ characters[0].NAME }}{% endblock title %}
+
+{% block content %}
+    <div class="col-12 col-lg-8 col-xl-8 my-3">
+        <div class="mb-3">
+            <h3 class="text-white">
+                Best Runs for {{ characters[0].NAME }}
+                <small class="text-muted">and other characters who do runs good too.</small>
+            </h3>
+        </div>
+        <table class="table table-striped table-dark table-responsive-md table-responsive-sm">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">AD</th>
+                <th scope="col">FH</th>
+                <th scope="col">JY</th>
+                <th scope="col">KR</th>
+                <th scope="col">ML</th>
+                <th scope="col">SOB</th>
+                <th scope="col">SOTS</th>
+                <th scope="col">TD</th>
+                <th scope="col">TOS</th>
+                <th scope="col">UR</th>
+                <th scope="col">WM</th>
+                <th scope="col">WS</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for character in characters %}
+                <tr
+                    {% if loop.first %}class="bg-primary"{% endif %}
+                >
+                    <th scope="row">{{ character.NAME }}</th>
+                    <td>{{ character.AD }}</td>
+                    <td>{{ character.FH }}</td>
+                    <td>{{ character.JY }}</td>
+                    <td>{{ character.KR }}</td>
+                    <td>{{ character.ML }}</td>
+                    <td>{{ character.SOB }}</td>
+                    <td>{{ character.SOTS }}</td>
+                    <td>{{ character.TD }}</td>
+                    <td>{{ character.TOS }}</td>
+                    <td>{{ character.UR }}</td>
+                    <td>{{ character.WM }}</td>
+                    <td>{{ character.WS }}</td>
+                </tr>
+        {% endfor %}
+        </tbody>
+    </div>
+{% endblock content%}

@@ -1,0 +1,35 @@
+{% extends "base" %}
+
+{% block content %}
+    <div class="jumbotron col-12 col-lg-8 col-xl-8 mb-6">
+    <h1 class="display-4">Scandalbot</h1>
+    <p class="lead">The Discord bot for the Scandal WoW guild.</p>
+    <hr class="my-4">
+    <p>This site serves as a display for various types of information from Scandalbot on our Discord server.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg mr-3" href="https://raider.io/guilds/us/sargeras/Scandal" role="button">Raider.io</a>
+        <a class="btn btn-secondary btn-lg" href="https://www.wowprogress.com/guild/us/sargeras/Scandal" role="button">WoWProgress</a>
+    </p>
+    </div>
+    <section class="col-12 col-lg-8 col-xl-8 text-light">
+        <h2>Interested in joining Scandal?</h2>
+        <p>Scandal is a semi casual raiding guild on US-Sargeras. We have a solid core group that has been playing together for years. We just recently started doing mythic progression. Our first tier of mythic progression was Eternal Palace where we went 4/8M. Before that we were a heroic only guild. We ended Ny'alotha at 8/12M</p>
+        <p>Now we are transitioning from just another mid-tier mythic guild to a Cutting Edge mythic guild while still having loads of fun. Outside of raid we do a lot of mythic plus and have a wide range of io scores. If you like to push +20s we've got a group for you. If you just like doing +15s we've got a group for you. If you just want to do the minimum M+ required each week we've got a group for you.</p>
+        <div class="list-group">
+            <div class="list-group-item list-group-item-dark flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Mythic Raids</h5>
+                    <a target="_blank" href="https://forms.gle/zKz9KLJ829BHFJ9k9"><small>Recruiting</small></a>
+                </div>
+                <p class="mb-1">Tuesday/Thursday 8-11pm CT</p>
+            </div>
+            <div class="list-group-item list-group-item-dark flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Heroic Raids</h5>
+                    <small>Open to Community Members</small>
+                </div>
+                <p class="mb-1">Friday/Sunday 8-11pm CT</p>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

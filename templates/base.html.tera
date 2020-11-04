@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Scandalbot{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+        <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-8 col-xl-8 mt-2 pb-3">
+                <nav class="bg-dark text-white align-middle" style="display:flex;align-items:center;">
+                    <img src="/static/logo-alliance.png" width="31" height="40" class="d-inline-block align-top" alt="">
+                    <span class="ml-3">&lt;Scandal&gt; US-Sargeras</span>
+                </nav>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            {% block content %}{% endblock content %}
+        </div>
+    </div>
+    </body>
+</html>
