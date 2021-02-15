@@ -2,16 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Scandalbot{% block title %}{% endblock title %}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"> 
   </head>
   <body class="bg-dark">
-    <div class="container">
+    <div class="container pb-3">
         <div class="row justify-content-lg-center">
-            <div class="col-12 col-lg-8 col-xl-8 mt-2 pb-3">
-                <nav class="bg-dark text-white align-middle" style="display:flex;align-items:center;">
-                    <img src="/static/logo-alliance.png" width="31" height="40" class="d-inline-block align-top" alt="">
-                    <span class="ml-3">&lt;Scandal&gt; US-Sargeras</span>
+            <div class="col-12 col-lg-8 col-xl-8 py-3 mb-3" style="background:linear-gradient(to right, #0A0652, #175277);">
+                <nav class="text-white align-middle" style="display:flex;align-items:center;">
+                    <!--<img src="/static/logo-alliance.png" width="31" height="40" class="d-inline-block align-top" alt="">-->
+                    <a href="/" class="text-white" style="font-family:lato;font-weight:900;font-size:24px;">&lt;Scandal&gt;</a>
                 </nav>
             </div>
         </div>

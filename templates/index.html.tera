@@ -1,15 +1,17 @@
 {% extends "base" %}
 
 {% block content %}
-    <div class="jumbotron col-12 col-lg-8 col-xl-8 mb-6">
-    <h1 class="display-4">Scandalbot</h1>
-    <p class="lead">The Discord bot for the Scandal WoW guild.</p>
-    <hr class="my-4">
-    <p>This site serves as a display for various types of information from Scandalbot on our Discord server.</p>
-    <p class="lead">
-        <a class="btn btn-primary btn-lg mr-3" href="https://raider.io/guilds/us/sargeras/Scandal" role="button">Raider.io</a>
-        <a class="btn btn-secondary btn-lg" href="https://www.wowprogress.com/guild/us/sargeras/Scandal" role="button">WoWProgress</a>
-    </p>
+    </div class="col-12 col-lg-8 col-xl-8 mb-6">
+        <div class="jumbotron">
+        <h1 class="display-4">Scandalbot</h1>
+        <p class="lead">The Discord bot for the Scandal WoW guild.</p>
+        <hr class="my-4">
+        <p>This site serves as a display for various types of information from Scandalbot on our Discord server.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg mr-3" href="https://raider.io/guilds/us/sargeras/Scandal" role="button">Raider.io</a>
+            <a class="btn btn-secondary btn-lg" href="https://www.wowprogress.com/guild/us/sargeras/Scandal" role="button">WoWProgress</a>
+        </p>
+        </div>
     </div>
     <section class="col-12 col-lg-8 col-xl-8 text-light">
         <h2>Interested in joining Scandal?</h2>

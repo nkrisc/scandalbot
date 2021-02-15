@@ -1,17 +1,16 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
+extern crate base64;
 #[macro_use]
 extern crate rocket;
-extern crate base64;
-use json_url;
 extern crate serde;
 #[macro_use]
 extern crate serde_derive;
 
+use json_url;
 use rocket::response::Redirect;
 use rocket_contrib::{serve::StaticFiles, templates::Template};
-use std::collections::HashMap;
-use std::str;
+use std::{collections::HashMap, str};
 
 #[derive(Deserialize, Serialize)]
 struct Context {
@@ -26,34 +25,26 @@ impl Context {
     }
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Serialize, Deserialize, Debug, Default, Clone)]
 struct Character {
     #[serde(default)]
     id: String,
-    #[serde(rename = "AD")]
-    ad: i8,
-    #[serde(rename = "FH")]
-    fh: i8,
-    #[serde(rename = "JY")]
-    jy: i8,
-    #[serde(rename = "KR")]
-    kr: i8,
-    #[serde(rename = "ML")]
-    ml: i8,
-    #[serde(rename = "SOB")]
-    sob: i8,
-    #[serde(rename = "SOTS")]
-    sots: i8,
-    #[serde(rename = "TD")]
-    td: i8,
-    #[serde(rename = "TOS")]
-    tos: i8,
-    #[serde(rename = "UR")]
-    ur: i8,
-    #[serde(rename = "WM")]
-    wm: i8,
-    #[serde(rename = "WS")]
-    ws: i8,
+    #[serde(rename = "HOA")]
+    hoa: i8,
+    #[serde(rename = "MOTS")]
+    mots: i8,
+    #[serde(rename = "DOS")]
+    dos: i8,
+    #[serde(rename = "NW")]
+    nw: i8,
+    #[serde(rename = "PF")]
+    pf: i8,
+    #[serde(rename = "SD")]
+    sd: i8,
+    #[serde(rename = "SOA")]
+    soa: i8,
+    #[serde(rename = "TOP")]
+    top: i8,
     #[serde(rename = "NAME")]
     name: String,
     #[serde(rename = "WEEKLY_CHEST")]
